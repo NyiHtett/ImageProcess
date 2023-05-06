@@ -113,6 +113,13 @@ int main()
          ostream.put(pgreen);
          ostream.put(pred);
          }
+            else
+         {
+         ostream.seekp(pos); // Go back to the start of the pixel
+         ostream.put(blue); // Write the pixel
+         ostream.put(green);
+         ostream.put(red);
+         }
          }
          
          else
